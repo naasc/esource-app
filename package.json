@@ -1,0 +1,32 @@
+{
+  "name": "esource",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material/checkbox": "^0.3.7",
+    "@material/drawer": "^0.5.1",
+    "@material/tabs": "^0.2.2",
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "foreman": "^2.0.0",
+    "immutable": "^3.8.1",
+    "marked": "^0.3.6",
+    "material-components-web": "^0.14.0",
+    "mongoose": "^4.10.4",
+    "nodemon": "^1.11.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start-dev": "nf start -p 3000",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

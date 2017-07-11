@@ -1,0 +1,99 @@
+import React from 'react'
+
+const Home = () => (
+
+  <div className="wrapper">
+   
+  <div className="example">
+   
+    <div className="mdc-grid-list mdc-grid-list--twoline-caption">
+	  <ul className="mdc-grid-list__tiles">
+	    <li className="mdc-grid-tile">
+	      <div className="mdc-grid-tile__primary">
+	        <img className="mdc-grid-tile__primary-content" src="/images/1-1.jpg" />
+	      </div>
+	      <span className="mdc-grid-tile__secondary card partners">
+	        <span className="mdc-grid-tile__title">Cloud</span>
+	      </span>
+	    </li>
+
+	    <li className="mdc-grid-tile">
+	      <div className="mdc-grid-tile__primary">
+	        <img className="mdc-grid-tile__primary-content" src="/images/1-1.jpg" />
+	      </div>
+	      <span className="mdc-grid-tile__secondary card approvals">
+	        <span className="mdc-grid-tile__title">License</span>
+	        <span className="mdc-grid-tile__support-text">Support text</span>
+	      </span>
+	    </li>
+
+	     <li className="mdc-grid-tile">
+	      <div className="mdc-grid-tile__primary">
+	        <img className="mdc-grid-tile__primary-content" src="/images/1-1.jpg" />
+	      </div>
+	      <span className="mdc-grid-tile__secondary card pricelists">
+	        <span className="mdc-grid-tile__title">Systems</span>
+	      </span>
+	    </li>
+
+	     <li className="mdc-grid-tile">
+	      <div className="mdc-grid-tile__primary">
+	        <img className="mdc-grid-tile__primary-content" src="/images/1-1.jpg" />
+	      </div>
+	      <span className="mdc-grid-tile__secondary card migrations">
+	        <span className="mdc-grid-tile__title">Support</span>
+	      </span>
+	    </li>
+
+	     <li className="mdc-grid-tile">
+	      <div className="mdc-grid-tile__primary">
+	        <img className="mdc-grid-tile__primary-content" src="/images/1-1.jpg" />
+	      </div>
+	      <span className="mdc-grid-tile__secondary card contracts">
+	        <span className="mdc-grid-tile__title">Migrations</span>
+	      </span>
+	    </li>
+
+	     <li className="mdc-grid-tile">
+	      <div className="mdc-grid-tile__primary">
+	        <img className="mdc-grid-tile__primary-content" src="/images/1-1.jpg" />
+	      </div>
+	      <span className="mdc-grid-tile__secondary card development">
+	        <span className="mdc-grid-tile__title">Partners</span>
+	      </span>
+	    </li>
+
+	    <li className="mdc-grid-tile">
+	      <div className="mdc-grid-tile__primary">
+	        <img className="mdc-grid-tile__primary-content" src="/images/1-1.jpg" />
+	      </div>
+	      <span className="mdc-grid-tile__secondary card migrations">
+	        <span className="mdc-grid-tile__title">Services</span>
+	      </span>
+	    </li>
+
+	     <li className="mdc-grid-tile">
+	      <div className="mdc-grid-tile__primary">
+	        <img className="mdc-grid-tile__primary-content" src="/images/1-1.jpg" />
+	      </div>
+	      <span className="mdc-grid-tile__secondary card contracts">
+	        <span className="mdc-grid-tile__title">Global Business</span>
+	      </span>
+	    </li>
+
+	     <li className="mdc-grid-tile">
+	      <div className="mdc-grid-tile__primary">
+	        <img className="mdc-grid-tile__primary-content" src="/images/1-1.jpg" />
+	      </div>
+	      <span className="mdc-grid-tile__secondary card development">
+	        <span className="mdc-grid-tile__title">Acquisitions</span>
+	      </span>
+	    </li>
+
+	  </ul>
+	</div>
+  </div>
+  </div>
+)
+
+export default Home
