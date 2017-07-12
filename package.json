@@ -27,7 +27,7 @@
     "start": "react-scripts start",
     "start-dev": "nf start -p 3000",
     "start:prod": "pushstate-server build",
-    "deploy:prod": "npm run build && git add -A build && git commit -m \"npm build\" && git push github",
+    "deploy:prod": "npm run build && if [[ `git status --porcelain` ]]; then git add -A build && git commit -m \"npm build\"; fi && git push github",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
