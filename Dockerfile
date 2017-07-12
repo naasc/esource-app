@@ -1,26 +1,14 @@
-FROM node:8.0
+FROM nginx:1.10.1-alpine
 
-# Prepare app dir
-RUN mkdir -p /usr/src/app
+COPY build/ /usr/share/nginx/html/
 
-# Install dependencies
-WORKDIR /usr/src/app
-RUN npm install
-
-# Install app dependencies
-COPY package.json /usr/src/app/
-RUN npm install && \
-    npm install -g pushstate-server
-
-# Bundle app source
-COPY . /usr/src/app
-
-# Build the app
-#RUN npm run build
-CMD ["npm", "run", "build"]
+# Override the nginx start from the base container
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 
 # Expose the app port
-EXPOSE 9000
+EXPOSE 80
 
-# defined in package.json
-CMD [ "npm", "run", "start:prod" ]
+ENTRYPOINT ["/start.sh"]
+
+
