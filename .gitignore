@@ -7,7 +7,8 @@
 /coverage
 
 # production
-/build
+# commented out because using /build to stage docker deployment
+#/build
 
 # misc
 .DS_Store
