@@ -15,6 +15,7 @@
     "material-components-web": "^0.14.0",
     "mongoose": "^4.10.4",
     "nodemon": "^1.11.0",
+    "pushstate-server": "^3.0.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1"
@@ -25,6 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "start-dev": "nf start -p 3000",
+    "start:prod": "pushstate-server build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
