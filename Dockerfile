@@ -1,7 +1,7 @@
 FROM node:8.0
 
 # Prepare app dir
-RUN mkdir -p /usr/scr/app
+RUN mkdir -p /usr/src/app
 
 # Install dependencies
 WORKDIR /usr/src/app
@@ -17,6 +17,7 @@ COPY . /usr/src/app
 
 # Build the app
 #RUN npm run build
+CMD ["npm", "run", "build"]
 
 # Expose the app port
 EXPOSE 9000
