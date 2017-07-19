@@ -17,14 +17,16 @@ ul {
  justify-content: center;
 }
 
-
+#demo-wrapper section {
+    padding: 24px;
+}
 /* We want to give the content area some more padding */
 .wrapper {
- width: 1260px;
+ /*width: 1260px;*/
 }
 
 .header {
-  height: 300px;
+  /*height: 300px;*/
 }
 
 .example {
@@ -32,6 +34,18 @@ ul {
   padding: 12px;
  
 }
+
+.search {
+  margin: 12px;
+  padding: 12px;
+  max-width: 91%;
+}
+
+:root {
+    --mdc-theme-primary: #d1d2d4;
+}
+
+
 .mdc-grid-tile {
   --mdc-grid-list-tile-width: 300px;
   --mdc-grid-list-tile-height: 100px;
@@ -84,3 +98,5 @@ ul {
     margin: 0 auto;
     text-transform: uppercase;
 }
+
+
