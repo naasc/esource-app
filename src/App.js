@@ -2,6 +2,7 @@
 import React from 'react'
 import Header from './components/global/Header'
 import Drawer from './components/global/Drawer'
+
 import Main from './Main'
 
 
@@ -10,6 +11,7 @@ const App = (props) => (
  <div id="data-reactroot" className="demo-body mdc-typography">
  
     <Drawer />
+    
     <div className="demo-content">
       <header className="mdc-toolbar mdc-elevation--z4">
         <div className="mdc-toolbar__row">

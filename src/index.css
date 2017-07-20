@@ -22,7 +22,7 @@ ul {
 }
 /* We want to give the content area some more padding */
 .wrapper {
- /*width: 1260px;*/
+   width: 980px;
 }
 
 .header {
@@ -45,10 +45,75 @@ ul {
     --mdc-theme-primary: #d1d2d4;
 }
 
+/* Home page icons */
+.home-image {
+  /*font-family: OpenSans-Semibold;*/
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: -1px;
+}
+
+.cloud {
+ background: #F4AA46 
+}
+
+ 
+
+/* Font */
+
+
 
 .mdc-grid-tile {
-  --mdc-grid-list-tile-width: 300px;
+  --mdc-grid-list-tile-width: 200px;
   --mdc-grid-list-tile-height: 100px;
+}
+
+.mdc-grid-tile__primary-cloud {
+  background: #F4AA46; 
+  background-image: url("./images/icn-cloud.png");
+  background-repeat: no-repeat;
+}
+
+.mdc-grid-tile__primary-systems {
+  background: #3B4F59; 
+  background-image: url("./images/icn-systems.png");
+  background-repeat: no-repeat;
+}
+
+.mdc-grid-tile__primary-license {
+  background: #87C9BA; 
+  background-image: url("./images/icn-license.png");
+  background-repeat: no-repeat;
+}
+
+.mdc-grid-tile__primary-migration {
+  background: #E95B54; 
+  background-image: url("./images/icn-migration.png");
+  background-repeat: no-repeat;
+}
+
+.mdc-grid-tile__primary-acquistions {
+  background: #6E8598; 
+  background-image: url("./images/icn-acquistions.png");
+  background-repeat: no-repeat;
+}
+
+.mdc-grid-tile__primary-partners {
+  background: #9C80B8; 
+  background-image: url("./images/icn-partners.png");
+  background-repeat: no-repeat;
+}
+
+.mdc-grid-tile__primary-support {
+  background: #85B3DF; 
+  background-image: url("./images/icn-support.png");
+  background-repeat: no-repeat;
+}
+
+.mdc-grid-tile__primary-services {
+  background: #81BB5F; 
+  background-image: url("./images/icn-service.png");
+  background-repeat: no-repeat;
 }
 
 .mdc-persistent-drawer__header {
