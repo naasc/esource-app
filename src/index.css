@@ -22,7 +22,10 @@ ul {
 }
 /* We want to give the content area some more padding */
 .wrapper {
-   width: 980px;
+   /*width: 980px;*/
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .header {
@@ -32,7 +35,7 @@ ul {
 .example {
   margin: 12px;
   padding: 12px;
- 
+  max-width: 900px;
 }
 
 .search {
