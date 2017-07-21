@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './global/Header'
 import Search from './global/Search'
+import '@material/list/dist/mdc.list.css';
 
 const Home = () => (
 <main className="demo-main">
@@ -10,7 +11,7 @@ const Home = () => (
    <div className="search">
 		    <Search />
 	 </div>
-  <div className="example">
+   <div id="top" className="example">
 
     <div className="mdc-grid-list mdc-grid-list--twoline-caption">
 	  <ul className="mdc-grid-list__tiles">
@@ -90,7 +91,73 @@ const Home = () => (
 	  
 	  </ul>
 	</div>
-  </div>
+   </div>
+   <div id="bottom" className="example">
+     <div className="demo-grid mdc-layout-grid">
+          <div className="mdc-layout-grid__inner">
+            <div className="demo-cell mdc-layout-grid__cell--span-6">
+             
+              <section> This week on eSource
+               <h1>Accouncements</h1>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper 
+                 diam arcu, non venenatis eros elementum vitae. Phasellus eleifend ultricies
+                 tortor quis suscipit. Integer viverra lacus non vestibulum auctor. Nulla 
+                 cursus neque ac lectus eleifend, dignissim lacinia arcu viverra. Nam egestas
+                  elit risus, sed facilisis lacus aliquet eget. 
+              </p>
+              </section>
+            </div>
+            <div className="demo-cell mdc-layout-grid__cell--span-6">
+
+				<section>
+	            <h3>System Updates</h3>
+	            <div className="mdc-list-group">
+	              <ul className="mdc-list mdc-list--two-line mdc-list--avatar-list two-line-avatar-text-icon-demo mdc-list--dense">
+	                <li className="mdc-list-item">
+	                  <span className="mdc-list-item__start-detail grey-bg" role="presentation">
+	                    <i className="material-icons" aria-hidden="true">folder</i>
+	                  </span>
+	                  <span className="mdc-list-item__text">
+	                    Photos
+	                    <span className="mdc-list-item__text__secondary">Jan 9, 2014</span>
+	                  </span>
+	                  <a href="#" className="mdc-list-item__end-detail material-icons" aria-label="View more information" title="More info" onclick="event.preventDefault();">
+	                    info
+	                  </a>
+	                </li>
+	                <li className="mdc-list-item">
+	                  <span className="mdc-list-item__start-detail grey-bg" role="presentation">
+	                    <i className="material-icons" aria-hidden="true">folder</i>
+	                  </span>
+	                  <span className="mdc-list-item__text">
+	                    Recipes
+	                    <span className="mdc-list-item__text__secondary">Jan 17, 2014</span>
+	                  </span>
+	                  <a href="#" className="mdc-list-item__end-detail material-icons" aria-label="View more information" title="More info" onclick="event.preventDefault();">
+	                    info
+	                  </a>
+	                </li>
+	                <li className="mdc-list-item">
+	                  <span className="mdc-list-item__start-detail grey-bg" role="presentation">
+	                    <i className="material-icons" aria-hidden="true">folder</i>
+	                  </span>
+	                  <span className="mdc-list-item__text">
+	                    Work
+	                    <span className="mdc-list-item__text__secondary">Jan 28, 2014</span>
+	                  </span>
+	                  <a href="#" className="mdc-list-item__end-detail material-icons" aria-label="View more information" title="More info" onclick="event.preventDefault();">
+	                    info
+	                  </a>
+	                </li>
+	              </ul>            
+	            </div>
+	          </section>
+            </div>
+          </div>
+	  </div>
+      
+   </div>
   </div>
   
   

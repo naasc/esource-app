@@ -20,6 +20,9 @@ ul {
 #demo-wrapper section {
     padding: 24px;
 }
+
+
+
 /* We want to give the content area some more padding */
 .wrapper {
    /*width: 980px;*/
@@ -38,6 +41,11 @@ ul {
   margin: 12px;
   padding: 12px;
   max-width: 900px;
+}
+
+.example section{
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .search {
@@ -64,7 +72,9 @@ ul {
 }
 
  
-
+.mdc-list-item {
+  height: 44px;
+}
 /* Font */
 
 
