@@ -68,6 +68,9 @@ ul {
 /* Font */
 
 
+.mdc-grid-list__tiles{
+      justify-content: center;
+}
 
 .mdc-grid-tile {
   --mdc-grid-list-tile-width: 200px;
