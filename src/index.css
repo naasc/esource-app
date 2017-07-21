@@ -74,50 +74,54 @@ ul {
   --mdc-grid-list-tile-height: 100px;
 }
 
+.mdc-grid-tile__primary {
+  background-position: center 33%;
+}
+
 .mdc-grid-tile__primary-cloud {
-  background: #F4AA46; 
+  background-color: #F4AA46; 
   background-image: url("./images/icn-cloud.png");
   background-repeat: no-repeat;
 }
 
 .mdc-grid-tile__primary-systems {
-  background: #3B4F59; 
+  background-color: #3B4F59; 
   background-image: url("./images/icn-systems.png");
   background-repeat: no-repeat;
 }
 
 .mdc-grid-tile__primary-license {
-  background: #87C9BA; 
+  background-color: #87C9BA; 
   background-image: url("./images/icn-license.png");
   background-repeat: no-repeat;
 }
 
 .mdc-grid-tile__primary-migration {
-  background: #E95B54; 
+  background-color: #E95B54; 
   background-image: url("./images/icn-migration.png");
   background-repeat: no-repeat;
 }
 
 .mdc-grid-tile__primary-acquistions {
-  background: #6E8598; 
+  background-color: #6E8598; 
   background-image: url("./images/icn-acquistions.png");
   background-repeat: no-repeat;
 }
 
 .mdc-grid-tile__primary-partners {
-  background: #9C80B8; 
+  background-color: #9C80B8; 
   background-image: url("./images/icn-partners.png");
   background-repeat: no-repeat;
 }
 
 .mdc-grid-tile__primary-support {
-  background: #85B3DF; 
+  background-color: #85B3DF; 
   background-image: url("./images/icn-support.png");
   background-repeat: no-repeat;
 }
 
 .mdc-grid-tile__primary-services {
-  background: #81BB5F; 
+  background-color: #81BB5F; 
   background-image: url("./images/icn-service.png");
   background-repeat: no-repeat;
 }
