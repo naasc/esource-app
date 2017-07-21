@@ -119,7 +119,7 @@ const Home = () => (
 	                    <i className="material-icons" aria-hidden="true">folder</i>
 	                  </span>
 	                  <span className="mdc-list-item__text">
-	                    Photos
+	                    Updates 15 FY 2017
 	                    <span className="mdc-list-item__text__secondary">Jan 9, 2014</span>
 	                  </span>
 	                  <a href="#" className="mdc-list-item__end-detail material-icons" aria-label="View more information" title="More info" onclick="event.preventDefault();">
@@ -131,7 +131,7 @@ const Home = () => (
 	                    <i className="material-icons" aria-hidden="true">folder</i>
 	                  </span>
 	                  <span className="mdc-list-item__text">
-	                    Recipes
+	                    Updates 14 FY 2017
 	                    <span className="mdc-list-item__text__secondary">Jan 17, 2014</span>
 	                  </span>
 	                  <a href="#" className="mdc-list-item__end-detail material-icons" aria-label="View more information" title="More info" onclick="event.preventDefault();">
@@ -143,7 +143,7 @@ const Home = () => (
 	                    <i className="material-icons" aria-hidden="true">folder</i>
 	                  </span>
 	                  <span className="mdc-list-item__text">
-	                    Work
+	                    Updates 13 FY 2017
 	                    <span className="mdc-list-item__text__secondary">Jan 28, 2014</span>
 	                  </span>
 	                  <a href="#" className="mdc-list-item__end-detail material-icons" aria-label="View more information" title="More info" onclick="event.preventDefault();">
