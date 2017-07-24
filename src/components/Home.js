@@ -95,7 +95,7 @@ const Home = () => (
    <div id="bottom" className="example">
      <div className="demo-grid mdc-layout-grid">
           <div className="mdc-layout-grid__inner">
-            <div className="demo-cell mdc-layout-grid__cell--span-6">
+            <div className="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-phone">
              
               <section> This week on eSource
                <h1>Accouncements</h1>
@@ -103,12 +103,11 @@ const Home = () => (
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper 
                  diam arcu, non venenatis eros elementum vitae. Phasellus eleifend ultricies
                  tortor quis suscipit. Integer viverra lacus non vestibulum auctor. Nulla 
-                 cursus neque ac lectus eleifend, dignissim lacinia arcu viverra. Nam egestas
-                  elit risus, sed facilisis lacus aliquet eget. 
+                 cursus neque ac lectus eleifend, dignissim lacinia arcu viverra.
               </p>
               </section>
             </div>
-            <div className="demo-cell mdc-layout-grid__cell--span-6">
+            <div className="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-phone">
 
 				<section>
 	            <h3>System Updates</h3>
