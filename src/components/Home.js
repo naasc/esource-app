@@ -95,7 +95,7 @@ const Home = () => (
    <div id="bottom" className="example">
      <div className="demo-grid mdc-layout-grid">
           <div className="mdc-layout-grid__inner">
-            <div className="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-phone">
+            <div className="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet">
              
               <section> This week on eSource
                <h1>Accouncements</h1>
@@ -107,7 +107,7 @@ const Home = () => (
               </p>
               </section>
             </div>
-            <div className="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-phone">
+            <div className="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet">
 
 				<section>
 	            <h3>System Updates</h3>

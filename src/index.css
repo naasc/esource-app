@@ -143,9 +143,6 @@ ul {
     height: 64px;
 }
 
-.mdc-layout-grid__cell--span-6-phone{
- grid-column-end: span 8;
-}
     
 
 .card {
