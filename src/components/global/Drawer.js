@@ -1,7 +1,6 @@
-import React, {PureComponent} from 'react';
-import {Set as ImmutableSet, Map as ImmutableMap} from 'immutable';
+import React from 'react';
 import '@material/drawer/dist/mdc.drawer.css';
-import Tabs from './Tabs';
+
 
 
 const Drawer = () => (

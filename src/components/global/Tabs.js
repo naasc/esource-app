@@ -1,5 +1,4 @@
-import React, { PureComponent, PropTypes} from 'react';
-import { Set as ImmutableSet, Map as ImmutableMap } from 'immutable';
+import React, { PureComponent} from 'react';
 import '@material/tabs/dist/mdc.tabs.css';
 
 export default class Tabs extends PureComponent {
