@@ -19,13 +19,14 @@ const mcs_config = {
 };
 
 mcs.MobileBackendManager.setConfig(mcs_config)
-let mbe = mcs.MobileBackendManager.getMobileBackend('NAAContentFeed')
-console.log('mbe', mbe)
-
+const mbe = mcs.MobileBackendManager.getMobileBackend('NAAContentFeed')
+//console.log('mbe', mbe)
 mbe.setAuthenticationType("basicAuth")
 
+  
 
-export const getMBE =() => (
-   console.log("dhhd")
-
-)
+export const authenticate = (props) => {
+  console.log("Hello")
+   mbe.Authorization.authenticate(props.username, props.password,
+   					 props.success, props.failure)
+}

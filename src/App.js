@@ -1,14 +1,14 @@
 
 import React from 'react'
 import Drawer from './components/global/Drawer'
-import Mbe from './mbe/mbe'
+import Login from './components/login/Login'
 import Main from './Main'
-
 
 const App = (props) => (
 
- <div id="data-reactroot" className="demo-body mdc-typography">
-   
+<div id="data-reactroot" className="demo-body mdc-typography">
+    
+
     <Drawer />
     
     <div className="demo-content">
@@ -26,6 +26,7 @@ const App = (props) => (
       <Main />
 
     </div>
+<Login />
   </div>
 )
 
