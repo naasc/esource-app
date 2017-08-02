@@ -55,7 +55,6 @@ ul {
   background-position: 20px center;
   background-size: 1.2em;
   font-size: 1.2em;
-  border: 1;
   outline: none;
 }
 
@@ -71,6 +70,12 @@ ul {
   letter-spacing: -1px;
 }
 
+.login-form {
+  max-width: 300px;
+  margin: 25px;
+
+}
+
 .cloud {
  background: #F4AA46 
 }
@@ -81,6 +86,15 @@ ul {
 }
 /* Font */
 
+.mdc-textfield--fullwidth:not(.mdc-textfield--multiline) {
+  height: 64px;
+}
+.mdc-button {
+  --mdc-ripple-surface-width: 92.3594px;
+    --mdc-ripple-surface-height: 36px;
+    --mdc-ripple-fg-size: 55.4156px;
+    --mdc-ripple-fg-scale: 1.96925;
+}
 
 .mdc-grid-list__tiles{
       justify-content: center;

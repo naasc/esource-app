@@ -1,26 +1,32 @@
 import React, { Component } from 'react'
-
 import Search from './global/Search'
 import UpdateList from './UpdateList'
+import * as ContentAPI from '../utils/ContentAPI'
 
 import '@material/list/dist/mdc.list.css';
 
 class Home extends Component {
-
-  state = {
-  	query: ''
-  }	
-  
-  updateQuery = (query) => {
-    this.setState( { query: query.trim() })
+  constructor(props) {
+  	super(props)
+  	this.state = {
+       query: '',
+       indexes: []
+  	}
+  }
+  componentDidMount() {
+    ContentAPI.getIndex().then((indexes) => {
+       this.setState({ indexes })
+     })
   }
 
   render() {
+  	const { indexes } = this.state
   	return (
 	  <main className="demo-main">
 	    <div className="wrapper">
-	       <Search />
-	    
+	       
+	       <Search indexes={ indexes }/>
+	     
 	       <div id="top" className="example">
 	       <div className="mdc-grid-list mdc-grid-list--twoline-caption">
 

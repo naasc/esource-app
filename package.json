@@ -5,6 +5,7 @@
   "dependencies": {
     "@material/checkbox": "^0.3.7",
     "@material/drawer": "^0.5.1",
+    "@material/form-field": "^0.2.10",
     "@material/layout-grid": "^0.4.0",
     "@material/list": "^0.2.12",
     "@material/tabs": "^0.2.2",
