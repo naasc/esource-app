@@ -21,19 +21,31 @@ const mcs_config = {
 mcs.MobileBackendManager.setConfig(mcs_config)
 const mbe = mcs.MobileBackendManager.getMobileBackend('NAAContentFeed')
 mbe.setAuthenticationType("basicAuth")
-
+/*
+mbe.Authorization.authenticateAnonymous(
+                    function (response, data) {                        
+                        console.log("Success authenticating against mobile backend");
+                    },
+                    function (statusCode, data) {
+                        console.log("Failure authenticating against mobile backend");
+                    }
+            );
+*/
+//mbe.Authorization.authenticate(username, password, successCallback, failureCallback);
+//console.log("In MBE", mbe)
   
 
 export const authenticate = (params) => {
    const {username, password} = params
-   mbe.Authorization.authenticate(username, password
+   console.log(params)
+   return mbe.Authorization.authenticate(username, password
    	 , function(data) { console.log("Success"); }
    	 , function(status,data){ console.log("Error authenticating: " + data);
     })
 }
  
 export const getUpdates = () => {
-   console.log('in getUpdates');
+   console.log('in getUpdates', mbe);
    return mbe.CustomCode.invokeCustomCodeJSONRequest('contentfeed/updates' , 'GET' , null
     , function(statusCode,data) {console.log("Success", statusCode ,data)}
     , function(statusCode,data) {console.log("Failure", statusCode ,data)})

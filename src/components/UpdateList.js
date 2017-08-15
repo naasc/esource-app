@@ -13,10 +13,39 @@ class UpdateList extends Component {
   }
   componentDidMount() {
   	this.setState({loading: true})
-    Mbe.getUpdates().then((docs) => {
-      console.log("Results" + docs)
+    /*
+  	let url = "https://mobile-gse00010386.mobileenv.us2.oraclecloud.com:443/mobile/custom/contentfeed/updates";
+  	let myHeaders = new Headers({
+      "Authorization": "Basic R1NFMDAwMTAzODZfTU9CSUxFX01PQklMRV9BTk9OWU1PVVNfQVBQSUQ6UHcwbnFmZ2sudHViNnI=",
+      "Oracle-Mobile-Backend-ID": "2b803cfa-4740-4323-9a70-a39b789816a5"
+     });
+
+  	let fetchData = { 
+      method: 'GET', 
+      headers: myHeaders
+    }
+  	
+     fetch(url, fetchData)
+    	  .then(response => response.json())
+    	  .then(json => json)
+    	  .then(updates => this.setState({
+    	  	updates,
+    	  	loading: false
+    }))*/
+    let creds = {
+      username: "",
+      password: ""
+    }
+
+    Mbe.authenticate(creds).then((response) => {
+        Mbe.getUpdates().then((updates) => {
+        this.setState({
+          updates: updates.data,
+          loading: false
+         })
+      })
     })
-  
+
   }
   render() {
   	const { updates, loading } = this.state
