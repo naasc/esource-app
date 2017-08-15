@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import '@material/drawer/dist/mdc.drawer.css';
 
 
@@ -34,9 +35,9 @@ const Drawer = () => (
               <a className="mdc-list-item" href="#" data-mdc-tabIndex-handled="true" tabIndex="-1">
                 <i className="material-icons mdc-list-item__start-detail" aria-hidden="true">settings</i>Settings
               </a>
-              <a className="mdc-list-item" href="#/login" data-mdc-tabIndex-handled="true" tabIndex="-1">
+              <Link className="mdc-list-item" to="/login" data-mdc-tabIndex-handled="true" tabIndex="-1">
                 <i className="material-icons mdc-list-item__start-detail" aria-hidden="true">power_settings_new</i>Login
-              </a>
+              </Link>
             </nav>
           </div>
       </nav>

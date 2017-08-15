@@ -14,16 +14,16 @@ class Login extends Component {
    }
 
     onSuccess = () => (
-      console.log("success")
+      console.log("Login success")
     )
 
     onFailure = () => (
-      console.log("failure")
+      console.log("Login failure")
     )
     onLogin = () => {
        console.log(this.state);
   
-       Mbe.authenticate({username:"john.dunbar", password: "abc123" });
+       Mbe.authenticate(this.state);
     }
     updateName(value) {
       this.setState({username: value});
@@ -39,14 +39,15 @@ class Login extends Component {
       <div className="login-form">
         <div className="mdc-form-field mdc-form-field--align-end">
           <div id="username" className="mdc-textfield" data-demo-no-auto-js="">
-            <input onChange={(event) => this.updatePassword(event.target.value)} type="text" className="mdc-textfield__input" id="css-only-textfield" placeholder="Name"/>
+            <input onChange={(event) => this.updateName(event.target.value)} type="text" 
+            className="mdc-textfield__input" id="css-only-textfield" placeholder="Name"/>
           </div>
           <label htmlFor="css-only-textfield">Your name:</label>
           
         </div>
         <div className="mdc-form-field mdc-form-field--align-end">
          <div id="pword" className="mdc-textfield" data-demo-no-auto-js="">
-            <input type="password" onChange={(event) => this.updateName(event.target.value)} className="mdc-textfield__input" id="css-only-textfield" placeholder="Password"/>
+            <input type="password" onChange={(event) => this.updatePassword(event.target.value)} className="mdc-textfield__input" id="css-only-textfield" placeholder="Password"/>
           </div>
           <label htmlFor="css-only-textfield">Password:</label>
         </div>

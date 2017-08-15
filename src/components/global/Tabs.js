@@ -24,7 +24,7 @@ export default class Tabs extends PureComponent {
                  <a className="mdc-tab" href="">Approvals</a>
                  <a className="mdc-tab" href="">Localizations</a>
                  <a className="mdc-tab" href="">Training</a>
-                 <a className="mdc-tab" href="">Process & Templates</a>
+                 <a className="mdc-tab" href="">Templates</a>
                  <a className="mdc-tab" href="">Dashboard</a>
                  <span className="mdc-tab-bar__indicator"></span>
                </nav>

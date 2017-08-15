@@ -10,8 +10,8 @@ const mcs_config = {
                 "applicationKey": "0fc655f4-5ebb-4876-b9e4-352be9a2f491",
                 "authorization": {
                     "basicAuth": {
-                        "backendId": "b93925cf-7c60-4cda-a3e0-2f0358c9eff2",
-                        "anonymousToken": "WjE3R1NFQUNDVDI3NDIwNTUxMjFfTU9CSUxFUE9SVEFMU0VUUklBTDExNjVERVZfTU9CSUxFX0FOT05ZTU9VU19BUFBJRDphSjVfdHpmZ3FqaTJoYg==",
+                        "backendId": "2b803cfa-4740-4323-9a70-a39b789816a5",
+                        "anonymousToken": "R1NFMDAwMTAzODZfTU9CSUxFX01PQklMRV9BTk9OWU1PVVNfQVBQSUQ6UHcwbnFmZ2sudHViNnI=",
                     }
                 }
             }
@@ -20,13 +20,21 @@ const mcs_config = {
 
 mcs.MobileBackendManager.setConfig(mcs_config)
 const mbe = mcs.MobileBackendManager.getMobileBackend('NAAContentFeed')
-//console.log('mbe', mbe)
 mbe.setAuthenticationType("basicAuth")
 
   
 
-export const authenticate = (props) => {
-  console.log("Hello")
-   mbe.Authorization.authenticate(props.username, props.password,
-   					 props.success, props.failure)
+export const authenticate = (params) => {
+   const {username, password} = params
+   mbe.Authorization.authenticate(username, password
+   	 , function(data) { console.log("Success"); }
+   	 , function(status,data){ console.log("Error authenticating: " + data);
+    })
+}
+ 
+export const getUpdates = () => {
+   console.log('in getUpdates');
+   return mbe.CustomCode.invokeCustomCodeJSONRequest('contentfeed/updates' , 'GET' , null
+    , function(statusCode,data) {console.log("Success", statusCode ,data)}
+    , function(statusCode,data) {console.log("Failure", statusCode ,data)})
 }
